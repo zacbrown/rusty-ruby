@@ -1,0 +1,10 @@
+[package]
+name = "rusty_lib"
+version = "0.1.0"
+authors = ["Zac Brown <zacbrown@users.noreply.github.com>"]
+
+[dependencies]
+
+[lib]
+name = "rusty"
+crate-type = ["dylib"]
