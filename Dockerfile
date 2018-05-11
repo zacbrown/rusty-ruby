@@ -36,7 +36,7 @@ COPY . $APP_HOME/
 WORKDIR $RUST_LIB_ROOT
 RUN cargo build --release && \
     mkdir $RUBY_APP_ROOT/ffi/ && \
-    cp $RUST_LIB_ROOT/target/release/librusty.so $RUBY_APP_ROOT/ffi/$RUST_LIB_NAME
+    cp $RUST_LIB_ROOT/target/release/librusty.so $RUBY_APP_ROOT/ffi/
 
 WORKDIR $RUBY_APP_ROOT
 
